@@ -1,0 +1,25 @@
+ML Project Trials and Progress:
+
+-explored gans, but output was shit
+-Tried online generation but was too slow to properly experiment with
+-Downloaded invokeai and played around with generation
+-Played around with different prompts and parameters to get a feel for what works
+-Have to specify a specific pokemon and it seems to kind of know its features, so cant generate totally new ones from just the pokemon prompt
+-Can't generate already known pokemon
+-resluts are very random and very hit or miss relative to prompts (last part)
+-wasnt able to generate good results in pokemon style art
+-try img2img pokemon
+-experimented with different: models, positive words, types of art, artists, resolutions, image descriptions, negative prompts, samplers, steps, sizes, 
+-try different pokemon embeddings and create your own (and the experiments with them monkey)
+-next: do the finetuning and test
+
+-i say the project was a success since i got to learn so much about stable diffusion and generative models. I also had the opportunity to do alot of hands on work with it and mess around with it and that was not only fun but i also learned alot from it. And it made me genuinely excited to explore this field even more.
+-learned about: GANs, stable diffusion, different stable diff archs, textual inversion, hypernetworks, dreambooth, img2img, outpainting, prompt engineering, idk what else
+-future work: experiment more with training embeddings to get actually good results. Experiment with different finetuned versions of stable diffusion models also with embeddings. Hypernetworks. Dreambooth to transfer poses. Even more endless prompt engineering. 
+-image to image test
+End Goals:
+- Generate new pokemon in the style of old pokemon (lambda, low quality, four embeddings, not enough detail and originality to pass for new high quality pokemon)
+- Generate new pokemon/creatures in new style (prompt engineering on sd1.5 and anything-v3)
+- Generate old pokemon in new settings and situations (one pokemon TI attempt)
+
+get one prompt thats good for the base model and try it on all

@@ -1,0 +1,254 @@
+control settings:
+seed: 3118917620
+cfg scale: 7
+size: 512x512
+denoising steps: 20
+sampler: Euler a
+
+
+prompt1:
+bulbasaur
+greninja
+
+lambda:
+bulbasaur
+greninja
+spider
+Kratos holding The Blades of Chaos
+
+prompt2: (effects, weighting)
+    lambda:
+a giraffe pokemon, ethereal, radiant, digital painting, artstation, concept art, smooth, 8 k frostbite 3 engine, ultra detailed, dynamic, part
+Kratos holding The Blades of Chaos, ethereal, radiant, digital painting, artstation, concept art, smooth, 8 k frostbite 3 engine, ultra detailed, dynamic, part
+    sd1.5:
+a greninja pokemon, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+a (((greninja))) pokemon, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+a bulbasaur pokemon, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+a (((bulbasaur))) pokemon, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+a ((((charizard)))) (pokemon), fiery, dragon, cartoon style, breathing fire, trainer, pokeball, grassy field, battle, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+
+A white quadrupedal Pokemon, glowing pink crystal ball on its head, sharp claws, spring for legs, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white quadrupedal Pokemon, glowing pink crystal ball on its head, sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white (quadrupedal) Pokemon, glowing pink crystal ball on its head, sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white ((quadrupedal)) Pokemon, glowing pink crystal ball on its head, sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white ((((quadrupedal)))) Pokemon, glowing pink crystal ball on its head, sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white ((((quadrupedal)))) Pokemon, glowing pink crystal (ball) on its head, sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+A white ((((quadrupedal)))) Pokemon, (glowing pink crystal ball on its head), sharp claws , ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+
+
+sd-embed:
+A greninja pokemon, in the style of <pkmn-galar>
+A greninja pokemon, in the style of <pkmn-modern>
+A greninja pokemon, in the style of <pkmn-classic>
+A greninja pokemon, in the style of <pkmn-rgby>
+A bulbasaur pokemon, in the style of <pkmn-galar>
+A bulbasaur pokemon, in the style of <pkmn-modern>
+A bulbasaur pokemon, in the style of <pkmn-classic>
+A bulbasaur pokemon, in the style of <pkmn-rgby>
+A white ((((quadrupedal)))) Pokemon, (glowing pink crystal ball on its head), sharp claws, in the style of <pkmn-galar>
+
+any-embed:
+A photo of a lucariov003 pokemon
+A photo of a lucariov003 pokemon firing an aura sphere
+A photo of a lucario680_v1.1 pokemon
+A photo of a lucario680_v1.1 pokemon firing an aura sphere
+
+
+works best when you give specificp okemon
+prompt3: (sd, any)(artist styles, negative prompts, denoising steps, sampler, seeds, cfg scale)
+
+bulba sd:
+a (bulbasaur) pokemon by beeple and James Gilleard and Justin Gerard, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+
+[ugly, tiling, abnormal, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of from, blurry, bad art, bad anatomy, blurred, text, watermark, grainy, weird colors, blind, worst quality, low quality, normal quality, oversaturated, low-res, kitsch, disconnected limbs, floating limbs, long neck, long body]
+
+gren
+a (greninja) pokemon by beeple and James Gilleard and Justin Gerard, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+
+[ugly, tiling, abnormal, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of from, blurry, bad art, bad anatomy, blurred, text, watermark, grainy, weird colors, blind, worst quality, low quality, normal quality, oversaturated, low-res, kitsch, disconnected limbs, floating limbs, long neck, long body]
+
+blba any:
+bulbasaur
+greninja
+
+[ugly, tiling, abnormal, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of from, blurry, bad art, bad anatomy, blurred, text, watermark, grainy, weird colors, blind, worst quality, low quality, normal quality, oversaturated, low-res, disconnected limbs, floating limbs, long neck, long body]
+
+1-
+a Sobble pokemon by beeple and James Gilleard and Justin Gerard, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+3940909373
+
+2-
+a grimmsnarl pokemon by beeple and James Gilleard and Justin Gerard, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+1202861962
+
+3-
+a Sobble pokemon by beeple and James Gilleard and Justin Gerard, ornate, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+3940909373
+
+Noise Threshold
+0
+Perlin Noise
+0
+
+Variations
+
+Variation Amount
+0
+Seed Weights
+203227793:0.2
+
+4-
+a chansey by samdoesart and James Gilleard and Justin Gerard, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d, 4K, 8K, ultra HD
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+3940909373
+
+5-
+a chansey pokemon coming out of its ((pokeball)) and hitting brock by samdoesart and James Gilleard and Justin Gerard, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d, 4K, 8K, ultra HD
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+2934346906
+
+6-
+a ((pokeball)) and hitting brock, by samdoesart and James Gilleard and Justin Gerard, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d, 4K, 8K, ultra HD
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+1749771007
+
+7-
+a ((pokemon monster)), by samdoesart and James Gilleard and Justin Gerard, dynamic, particulate, intricate, elegant, highly detailed, centered, artstation, smooth, sharp focus, octane render, 3d, 4K, 8K, ultra HD
+Images
+1
+Steps
+100
+CFG Scale
+7.5
+Width
+
+512
+Height
+
+576
+Sampler
+
+k_lms
+
+Seed
+Randomize Seed
+
+Seed
+3888069698

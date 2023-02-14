@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage[nonatbib]{nips_2019}
+
+\usepackage[breaklinks=true,letterpaper=true,colorlinks,citecolor=black,bookmarks=false]{hyperref}
+
+\usepackage{amsthm}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\usepackage[backend=biber,maxbibnames=9,style=numeric,maxcitenames=2,backref=true,uniquelist=false,uniquename=false,sorting=none,defernumbers=true,noerroretextools, url=false,doi=false,isbn=false]{biblatex}
+\usepackage{csquotes}
+\renewbibmacro{in:}{%
+	\ifentrytype{article}{}{%
+		\printtext{\bibstring{in}\intitlepunct}}}
+\renewbibmacro*{volume+number+eid}{%
+	\printfield{volume}%
+	%  \setunit*{\adddot}% DELETED
+	\setunit*{\addnbspace}% NEW (optional); there's also \addnbthinspace
+	\printfield{number}%
+	\setunit{\addcomma\space}%
+	\printfield{eid}}
+%\DeclareFieldFormat[article]{number}{\mkbibparens{#1}} 
+\renewbibmacro*{volume+number+eid}{%
+	\setunit*{\addcomma\space}% NEW
+	\printfield{volume}%
+	%  \setunit*{\adddot}% DELETED
+	\setunit*{\addcomma\space}% NEW
+	\printfield{number}%
+	\setunit{\addcomma\space}%
+	\printfield{eid}
+}
+\DeclareFieldFormat[article]{volume}{\bibstring{volume}~#1}% volume of a journal
+\DeclareFieldFormat[article]{number}{\bibstring{number}~#1}% number of a journal
+\newbibmacro{string+doiurlisbn}[1]{%
+  \iffieldundef{doi}{%
+    \iffieldundef{url}{%
+      \iffieldundef{isbn}{%
+        \iffieldundef{issn}{%
+          #1%
+        }{%
+          \href{http://books.google.com/books?vid=ISSN\thefield{issn}}{#1}%
+        }%
+      }{%
+        \href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{#1}%
+      }%
+    }{%
+      \href{\thefield{url}}{#1}%
+    }%
+  }{%
+    \href{http://dx.doi.org/\thefield{doi}}{#1}%
+  }%
+}
+\DeclareFieldFormat{title}{\usebibmacro{string+doiurlisbn}{\mkbibemph{#1}}}
+\DeclareFieldFormat[article,incollection,unpublished,inproceedings]{title}%
+{\usebibmacro{string+doiurlisbn}{\mkbibquote{#1}}}
+
+
+% change this to your bib file
+\addbibresource{project.bib}
+
+% use Times
+\usepackage{times}
+% For figures
+\usepackage{graphicx} % more modern
+%\usepackage{epsfig} % less modern
+%\usepackage{subfig} 
+
+\graphicspath{{../fig/}}
+
+\usepackage{tikz}
+\usepackage{tkz-tab}
+\usepackage{caption} 
+\usepackage{subcaption} 
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{arrow} = [very thick,->,>=stealth]
+
+\usepackage{cleveref}
+\usepackage{setspace}
+\usepackage{wrapfig}
+%\usepackage[ruled]{algorithm}
+\usepackage{algpseudocode}
+\usepackage[noend,linesnumbered]{algorithm2e}
+
+\usepackage[disable]{todonotes}
+
+
+\title{Replace with your title}
+
+\author{
+	Yao-Liang Yu \\
+	School of Computer Science\\
+	University of Waterloo\\
+	\texttt{yaoliang.yu@uwaterloo.ca} 
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract} 
+Put here a brief summary of the project: what is it about and what is your main result.  ``This is a cool paper.''
+\end{abstract} 
+
+Please summarize all your findings (empirical, algorithmic, theoretical) in a scientific report. Please always give proper citations to prior work or results. Be precise and concise. We expect the report to be less than \textbf{9 pages} (everything included). You may follow the suggested sections below but feel free to rearrange or adapt as you see fit.
+
+\section{Introduction}
+Present a brief background and motivation of your project. State the main results and sell your product. 
+
+\section{Related Works}
+Discuss relevant literature. Has your problem, or one of similar nature, been considered before? By whom? What are the differences or limitations (if any)? 
+
+\begin{quote}
+\textcite{Novikoff62} improved the convergence proof of \textcite{Block62}. See the excellent book \parencite{SS14} for more on machine learning.
+\end{quote}
+
+\section{Problem Formulation}
+Concisely and precisely (or even better mathematically) formulate your problem and present the technical challenges (that prior works failed to address).
+
+\section{Main Results}
+new algorithm? new analysis? new application?
+
+\section{Experiments}
+optional.
+
+\section{Conclusion}
+
+
+\newpage
+
+\section*{Acknowledgement}
+Thank people who have helped or influenced you in this project.
+
+\printbibliography[title={References}]
+
+\end{document}
